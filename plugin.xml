@@ -63,6 +63,10 @@
         
         <resource-file src="src/ios/image1@2x.png" />
         <resource-file src="src/ios/image2@2x.png" />
+        <resource-file src="src/ios/image3@2x.png" />
+        <resource-file src="src/ios/image4@2x.png" />
+        <resource-file src="src/ios/image5@2x.png" />
+        <resource-file src="src/ios/image6@2x.png" />
         <framework src="Foundation.framework" />
 	</platform>
 </plugin>
