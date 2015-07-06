@@ -43,6 +43,21 @@
 		
 		<header-file src="src/ios/UltravisualPlugin.h" />
 		<source-file src="src/ios/UltravisualPlugin.m" />
+        
+        <header-file src="src/ios/RPSlidingMenu.h" />
+        
+        <header-file src="src/ios/RPSlidingMenuCell.h" />
+        <source-file src="src/ios/RPSlidingMenuCell.m" />
+        
+        <header-file src="src/ios/RPSlidingMenuLayout.h" />
+        <source-file src="src/ios/RPSlidingMenuLayout.m" />
+        
+        <header-file src="src/ios/RPSlidingMenuViewController.h" />
+        <source-file src="src/ios/RPSlidingMenuViewController.m" />
+        
+        <header-file src="src/ios/RPViewController.h" />
+        <source-file src="src/ios/RPViewController.m" />
+        
         <resource-file src="src/ios/image1@2x.png" />
         <resource-file src="src/ios/image2@2x.png" />
         <framework src="Foundation.framework" />
