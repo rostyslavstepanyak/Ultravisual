@@ -1,9 +1,9 @@
 {
-  "name": "twitter-connect-plugin",
+  "name": "ultravisual-plugin",
   "version": "0.4.0",
-  "description": "Twitter Connect Plugin - Allows single-sign on logins using Twitter",
+  "description": "Ultravisual plugin  - Integrate native ultravisual UI control",
   "cordova": {
-    "id": "twitter-connect-plugin",
+    "id": "ultravisual",
     "platforms": [
       "android",
       "ios"
@@ -11,16 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ManifestWebDesign/twitter-connect-plugin.git"
+    "url": "https://github.com/rostyslavstepanyak/Ultravisual"
   },
   "keywords": [
     "cordova",
-    "twitter",
-    "login",
-    "connect",
-    "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios"
+    "ultravisual",
+    "create"
   ],
   "engines": [
     {
@@ -28,10 +24,10 @@
       "version": ">3.9.9"
     }
   ],
-  "author": "Nathan Kerr",
+  "author": "Ross Stepanyak",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/ManifestWebDesign/twitter-connect-plugin/issues"
+    "url": "https://github.com/rostyslavstepanyak/Ultravisualissues"
   },
-  "homepage": "https://github.com/ManifestWebDesign/twitter-connect-plugin#readme"
+  "homepage": "https://github.com/rostyslavstepanyak/Ultravisual#readme"
 }
