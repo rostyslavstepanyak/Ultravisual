@@ -2,12 +2,14 @@
 Cordova/PhoneGap plugin to use Ultravisual UI control
 
 #Usage
+#####1.cordova plugin add https://github.com/rostyslavstepanyak/Ultravisual
 
-#####//Create the root view controller as the Ultravisual component
+#####2.Create the root view controller as the Ultravisual component
+
 ```
 UltravisualPlugin.create(function(){},function(){});
 ```
-#####//Populate items
+#####3.Populate items
 ```
 UltravisualPlugin.createItem(function(){},function(){},'Title', 'Detailed text', 'some-image-name', { 
           onSelect: function() {
