@@ -26,16 +26,10 @@
     [[[UIApplication sharedApplication] delegate] window].rootViewController = [[UINavigationController alloc] initWithRootViewController:self.ultraViewController];
                 
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
-                                             messageAsDictionary:userSession];
+                                                  messageAsDictionary:@{@"Status":@"OK"}];
     
     [self.commandDelegate sendPluginResult:pluginResult
-                                            callbackId:command.callbackId];
-                
-    
-    NSLog(@"error: %@", [error localizedDescription]);
-    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR
-                                             messageAsString:[error localizedDescription]];
-		
+                                callbackId:command.callbackId];
 }
 
 - (void)addItem:(CDVInvokedUrlCommand*)command
