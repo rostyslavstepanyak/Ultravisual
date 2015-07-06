@@ -6,11 +6,11 @@ var UltravisualPlugin = {
 		exec(successCallback, errorCallback, 'UltravisualPlugin', 'create', []);
 	},
     createItem:  function(successCallback, errorCallback, label, details, image, options) {
-       /*var tag = UltravisualPlugin.tag++;
+       var tag = UltravisualPlugin.tag++;
        if (options && 'onSelect' in options && typeof(options['onSelect']) == 'function') {
           UltravisualPlugin.callbacks[tag] = {'onSelect':options.onSelect,'name':name};
        }
-    */
+    
        cordova.exec(successCallback,errorCallback, 'UltravisualPlugin', 'createItem', [label, details, image, options]);
     },
     onItemSelected : function(tag)
