@@ -54,7 +54,8 @@
 }
 
 - (void)createItem:(RPSItem *)item {
-    
+    [self.items addObject: item];
+    [self.collectionView reloadData];
 }
 
 #pragma mark - accessory override
