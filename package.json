@@ -1,9 +1,9 @@
 {
-  "name": "ultravisual-plugin",
+  "name": "UltravisualPlugin",
   "version": "0.4.0",
   "description": "Ultravisual plugin  - Integrate native ultravisual UI control",
   "cordova": {
-    "id": "ultravisual",
+    "id": "UltravisualPlugin",
     "platforms": [
       "android",
       "ios"
