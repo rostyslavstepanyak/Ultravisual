@@ -50,7 +50,7 @@
 }
 
 - (void)itemSelected:(NSInteger)itemNumber {
-    NSString * jsCallBack = [NSString stringWithFormat:@"UltravisulaPlugin.onItemSelected(%ld);", (long)itemNumber];
+    NSString * jsCallBack = [NSString stringWithFormat:@"UltravisualPlugin.onItemSelected(%ld);", (long)itemNumber];
     [self.commandDelegate evalJs:jsCallBack];
 }
 
