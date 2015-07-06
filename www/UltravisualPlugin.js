@@ -11,7 +11,7 @@ var UltravisualPlugin = {
           UltravisualPlugin.callbacks[tag] = {'onSelect':options.onSelect,'name':name};
        }
     
-       cordova.exec("SlidingMenu.createItem", label, details, image, options);
+       cordova.exec(successCallback,errorCallback, 'UltravisualPlugin', 'create', label, details, image, options);
     },
     onItemSelected = function(tag)
     {
