@@ -3,6 +3,7 @@ var exec = require('cordova/exec');
 var UltravisualPlugin = {
 	create: function (successCallback, errorCallback) {
         UltravisualPlugin.tag = 0;
+        UltravisualPlugin.callbacks = {};
 		exec(successCallback, errorCallback, 'UltravisualPlugin', 'create', []);
 	},
     createItem:  function(successCallback, errorCallback, label, details, image, options) {
