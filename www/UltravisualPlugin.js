@@ -16,6 +16,7 @@ var UltravisualPlugin = {
     },
     onItemSelected : function(tag)
     {
+        alert(tag);
         UltravisualPlugin.selectedItem = tag;
         if (typeof(UltravisualPlugin.callbacks[tag].onSelect) == 'function')
             UltravisualPlugin.callbacks[tag].onSelect(UltravisualPlugin.callbacks[tag].name);
