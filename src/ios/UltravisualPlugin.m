@@ -45,11 +45,11 @@
 
 #pragma mark - RPSSelctionDelegate
 
-- (void)didSelectItemAtIndex:(int)index {
+- (void)didSelectItemAtIndex:(NSInteger)index {
     [self itemSelected:index];
 }
 
-- (void)itemSelected:(int)itemNumber {
+- (void)itemSelected:(NSInteger)itemNumber {
     NSString * jsCallBack = [NSString stringWithFormat:@"UltravisulaPlugin.onItemSelected(%ld);", (long)itemNumber];
     [self.commandDelegate evalJs:jsCallBack];
 }

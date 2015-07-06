@@ -30,7 +30,7 @@ typedef void (^selection) (int itemNumber);
 
 @protocol RPSSelctionDelegate <NSObject>
 
-- (void)didSelectItemAtIndex:(int)index;
+- (void)didSelectItemAtIndex:(NSInteger)index;
 
 @end
 

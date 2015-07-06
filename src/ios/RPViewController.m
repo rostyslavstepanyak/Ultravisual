@@ -51,6 +51,8 @@
 - (void)slidingMenu:(RPSlidingMenuViewController *)slidingMenu didSelectItemAtRow:(NSInteger)row{
     [super slidingMenu:slidingMenu didSelectItemAtRow:row];
     
+    [self.delegate didSelectItemAtIndex:row];
+    
 }
 
 - (void)createItem:(RPSItem *)item {
