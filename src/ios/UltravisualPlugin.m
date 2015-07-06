@@ -4,7 +4,7 @@
 #import "RPViewController.h"
 #import "RPSItem.h"
 
-@interface UltravisualPlugin()
+@interface UltravisualPlugin()<RPSSelctionDelegate>
 @property (nonatomic, strong) RPViewController *ultraViewController;
 @end
 @implementation UltravisualPlugin
@@ -22,6 +22,7 @@
     [[app delegate] window].rootViewController = nil;
     
     self.ultraViewController = [[RPViewController alloc] init];
+    self.ultraViewController.delegate = self;
     
 
     [[[UIApplication sharedApplication] delegate] window].rootViewController = [[UINavigationController alloc] initWithRootViewController:self.ultraViewController];
