@@ -3,14 +3,10 @@ Cordova/PhoneGap plugin to use Ultravisual UI control
 
 #Usage
 
-//Create the root view controoller as the RPSSLideMenu
+####//Create the root view controller as the Ultravisual component
 
-UltravisualPlugin.create(function(){},function(){});
+#UltravisualPlugin.create(function(){},function(){});
 
-//Populate items
+####//Populate items
 
-UltravisualPlugin.createItem(function(){},function(){},'Title', 'Native Item in UIColllectionView', 'some-image-name', {
-                             onSelect: function() {
-                                alert("cordova: item selected");
-                             }
-                        });
+#UltravisualPlugin.createItem(function(){},function(){},'Title', 'Native Item in UIColllectionView', 'some-image-name', { onSelect: function() { alert("cordova: item selected");}<br>});
