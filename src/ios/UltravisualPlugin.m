@@ -34,7 +34,7 @@
                                 callbackId:command.callbackId];
 }
 
-- (void)addItem:(CDVInvokedUrlCommand*)command
+- (void)createItem:(CDVInvokedUrlCommand*)command
 {
     RPSItem *item = [[RPSItem alloc] init];
     item.title = [command.arguments objectAtIndex:0];
