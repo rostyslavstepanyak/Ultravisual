@@ -13,12 +13,12 @@ var UltravisualPlugin = {
     
        cordova.exec(successCallback,errorCallback, 'UltravisualPlugin', 'create', label, details, image, options);
     },
-    onItemSelected = function(tag)
+    onItemSelected : function(tag)
     {
-        this.selectedItem = tag;
-        if (typeof(this.callbacks[tag].onSelect) == 'function')
-            this.callbacks[tag].onSelect(this.callbacks[tag].name);
-    };
+        UltravisualPlugin.selectedItem = tag;
+        if (typeof(UltravisualPlugin.callbacks[tag].onSelect) == 'function')
+            UltravisualPlugin.callbacks[tag].onSelect(UltravisualPlugin.callbacks[tag].name);
+    }
 
 };
 
