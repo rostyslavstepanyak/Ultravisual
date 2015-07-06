@@ -9,6 +9,7 @@ var UltravisualPlugin = {
     createItem:  function(successCallback, errorCallback, label, details, image, options) {
        var tag = UltravisualPlugin.tag++;
        if (options && 'onSelect' in options && typeof(options['onSelect']) == 'function') {
+           alert('inside');
           UltravisualPlugin.callbacks[tag] = {'onSelect':options.onSelect,'name':name};
        }
     
