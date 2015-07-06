@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="twitter-connect-plugin" version="0.5.0">
-	<name>Twitter Connect</name>
-	<description>Twitter Connect Plugin - Allows single-sign on logins using Twitter</description>
+	<name>Ultravisual </name>
+	<description>Ultravisual  Plugin - integrates native ultravisual UI control</description>
 	<license>Apache 2.0</license>
 	<keywords>cordova,twitter,login,connect</keywords>
 	<repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git</repo>
@@ -12,11 +12,11 @@
 <!--		<engine name="cordova-ios" version=">=1.7.1" />-->
 	</engines>
 
-	<js-module src="www/TwitterConnect.js" name="TwitterConnect">
-		<clobbers target="TwitterConnect" />
+	<js-module src="www/UltravisualPlugin.js" name="UltravisualPlugin">
+		<clobbers target="UltravisualPlugin" />
 	</js-module>
 
-	<preference name="FABRIC_KEY" />
+
 	<!-- android -->
 	<platform name="android">
 		
@@ -36,28 +36,15 @@
 	<!-- ios -->
 	<platform name="ios">
 		<config-file target="config.xml" parent="/*">
-			<feature name="TwitterConnect">
-				<param name="ios-package" value="TwitterConnect" />
+			<feature name="UltravisualPlugin">
+				<param name="ios-package" value="UltravisualPlugin" />
 			</feature>
 		</config-file>
 		
-		<header-file src="src/ios/TwitterConnect.h" />
-		<source-file src="src/ios/TwitterConnect.m" />
-        <resource-file src="src/ios/TwitterKitResources.bundle" />
-		<framework src="src/ios/Fabric.framework" custom="true" />
-		<framework src="src/ios/TwitterKit.framework" custom="true" />
-        <framework src="src/ios/TwitterCore.framework" custom="true" />
-        <framework src="CoreText.framework" />
-		<framework src="AddressBook.framework" />
-		<framework src="QuartzCore.framework" />
-        <framework src="CoreData.framework" />
-        <config-file target="*-Info.plist" parent="Fabric">
-            <dict>
-                <key>APIKey</key>
-                <string>$FABRIC_KEY</string>
-                <key>Kits</key>
-                <array></array>
-            </dict>
-        </config-file>
+		<header-file src="src/ios/UltravisualPlugin.h" />
+		<source-file src="src/ios/UltravisualPlugin.m" />
+        <resource-file src="src/ios/image1.png" />
+        <resource-file src="src/ios/image2.png" />
+        <framework src="Foundation.framework" />
 	</platform>
 </plugin>
