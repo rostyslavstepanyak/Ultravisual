@@ -5,7 +5,7 @@ var UltravisualPlugin = {
         UltravisualPlugin.tag = 0;
 		exec(successCallback, errorCallback, 'UltravisualPlugin', 'create', []);
 	},
-    createItem:  function(label, details, image, options) {
+    createItem:  function(successCallback, errorCallback, label, details, image, options) {
        var tag = UltravisualPlugin.tag++;
        if (options && 'onSelect' in options && typeof(options['onSelect']) == 'function') {
           UltravisualPlugin.callbacks[tag] = {'onSelect':options.onSelect,'name':name};
