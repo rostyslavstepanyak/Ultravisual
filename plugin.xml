@@ -43,8 +43,8 @@
 		
 		<header-file src="src/ios/UltravisualPlugin.h" />
 		<source-file src="src/ios/UltravisualPlugin.m" />
-        <resource-file src="src/ios/image1.png" />
-        <resource-file src="src/ios/image2.png" />
+        <resource-file src="src/ios/image1@2x.png" />
+        <resource-file src="src/ios/image2@2x.png" />
         <framework src="Foundation.framework" />
 	</platform>
 </plugin>
