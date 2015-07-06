@@ -8,6 +8,11 @@
 
 #import "RPViewController.h"
 #import "RPSlidingMenuCell.h"
+#import "RPSItem.h"
+
+@interface RPViewController()
+@property (nonatomic) NSMutableArray *items;
+@end
 
 @implementation RPViewController
 
@@ -30,36 +35,36 @@
 
 -(NSInteger)numberOfItemsInSlidingMenu{
     // 10 for demo purposes, typically the count of some array
-    return 10;
+    return [self.items count];
 }
 
 - (void)customizeCell:(RPSlidingMenuCell *)slidingMenuCell forRow:(NSInteger)row{
  
-    // alternate for demo.  Simply set the properties of the passed in cell
-    if (row % 2 == 0) {
-        slidingMenuCell.textLabel.text = @"Something Special";
-        slidingMenuCell.detailTextLabel.text = @"For your loved ones!";
-        slidingMenuCell.backgroundImageView.image = [UIImage imageNamed:@"image1"];
-    }else{
-        
-        slidingMenuCell.textLabel.text = @"This Thing Too";
-        slidingMenuCell.detailTextLabel.text = @"This thing will blow your mind.";
-        slidingMenuCell.backgroundImageView.image = [UIImage imageNamed:@"image2"];
-    }
+    RPSItem *item = [self.items objectAtIndex:row];
     
+    
+    slidingMenuCell.textLabel.text = item.title;
+    slidingMenuCell.detailTextLabel.text = item.details;
+    slidingMenuCell.backgroundImageView.image = [UIImage imageNamed:item.image];
 }
 
 - (void)slidingMenu:(RPSlidingMenuViewController *)slidingMenu didSelectItemAtRow:(NSInteger)row{
-
     [super slidingMenu:slidingMenu didSelectItemAtRow:row];
+    
+}
 
-    // when a row is tapped do some action
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Row Tapped"
-                                                    message:[NSString stringWithFormat:@"Row %ld tapped.", (long)row]
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles: nil];
-    [alert show];
+- (void)createItem:(RPSItem *)item {
+    
+}
+
+#pragma mark - accessory override
+
+- (NSMutableArray *)items {
+    if(!_items) {
+        _items = [[NSMutableArray alloc] init];
+    }
+    
+    return _items;
 }
 
 

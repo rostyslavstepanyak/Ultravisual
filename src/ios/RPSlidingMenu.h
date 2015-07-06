@@ -25,3 +25,13 @@
 #import "RPSlidingMenuCell.h"
 #import "RPSlidingMenuLayout.h"
 #import "RPSlidingMenuViewController.h"
+
+typedef void (^selection) (int itemNumber);
+
+@protocol RPSSelctionDelegate <NSObject>
+
+- (void)didSelectItemAtIndex:(int)index;
+
+@end
+
+
